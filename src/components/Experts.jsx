@@ -1,0 +1,34 @@
+import ceoImage from "../assets/images/ceo.webp";
+import financeLead from "../assets/images/finance-lead.svg";
+import finance from "../assets/images/finance.svg";
+
+export default function Experts() {
+  const experts = [
+    { name: "Eke Urum", role: "Founder & CEO", image: ceoImage },
+    { name: "Sheriff Adeoti", role: "Finance Lead", image: financeLead },
+    { name: "Damilare Akinlotan", role: "Finance", image: finance },
+  ];
+
+  return (
+    <section className="container mx-auto items-center space-y-4 lg:mt-10 px-4">
+      {/* Mobile Header */}
+      <h2 className="font-bold text-2xl text-center lg:hidden my-3">
+        Meet the <span className="italic text-primary font-normal">Experts</span>
+      </h2>
+
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Desktop Header */}
+        <h2 className="font-bold text-4xl hidden lg:block px-12 leading-10">
+          Meet the <span className="italic text-primary font-normal">Experts</span>
+        </h2>
+        {experts.map(({ name, role, image }) => (
+          <div key={name} className="space-y-1">
+            <img src={image} alt={name} loading="eager" />
+            <p className="text-lg font-bold">{name}</p>
+            <p className="neutral">{role}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}

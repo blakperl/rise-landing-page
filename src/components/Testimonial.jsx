@@ -1,5 +1,5 @@
 
-import countryImage from "../assets/images/country.svg";
+import countryImage from "../assets/images/country.webp";
 
 
 export default function Testimonial() {
@@ -16,13 +16,13 @@ export default function Testimonial() {
   </div>
 
   <div className="space-y-3">
-    <h2 className="text-5xl font-bold">300k +</h2>
+    <h2 className="text-5xl font-bold">$42 m +</h2>
     <p className="text-lg primary">Paid out to users</p>
   </div>
   <div className="space-y-3 col-span-2 lg:col-span-1 flex flex-col items-center">
     <h2 className="flex justify-center items-center gap-2">
       <span className="text-5xl font-bold">5</span>
-      <img src={countryImage} alt="country" loading="eager" />
+      <img src={countryImage} width={140} height={70} alt="country" loading="eager" />
     </h2>
     <p className="text-lg primary">Countries</p>
   </div>

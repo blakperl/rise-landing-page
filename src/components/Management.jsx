@@ -1,4 +1,4 @@
-import risePhone from '../assets/images/rise-phone.svg';
+import risePhone from '../assets/images/rise-phone.webp';
 
 
 export default function Management() {

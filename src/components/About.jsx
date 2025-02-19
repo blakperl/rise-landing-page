@@ -1,7 +1,7 @@
-import about from '../assets/images/about-image.png';
-import appleIcon from '../assets/images/apple-icon.svg';
-import googleIcon from '../assets/images/google-icon.svg';
-import partnerImage from '../assets/images/partners-image.svg';
+import about from '../assets/images/about-image.webp';
+import appleIcon from '../assets/images/apple-icon.webp';
+import googleIcon from '../assets/images/google-icon.webp';
+import partnerImage from '../assets/images/partners-image.webp';
 
 export default function About() {
     return (
@@ -22,26 +22,26 @@ export default function About() {
             <div className="my-[3rem] flex items-center lg:gap-8 gap-4 ">
             <button className="btn w-[10rem]">Start investing {"->"}</button>
 
-            <div className="flex items-center lg:gap-4 gap-2">
-                <button className="lg:border-r-2 neutral lg:pr-4">
+            <div className="flex items-center lg:gap-3 gap-2 bg-[#71879C0D] rounded-full py-4 px-3">
+                <button className="lg:border-r-2 neutral lg:pr-3">
                 <img
                     src={appleIcon}
                     alt="Apple Store"
-                    className="w-8 h-8 md:w-10 md:h-10"
+                     className="w-6 h-6 md:w-8 md:h-8"
                     loading="eager"
                 />
                 </button>
 
-                <button className="lg:pl-4">
+                <button className="lg:pl-3">
                 <img
                     src={googleIcon}
                     alt="Google Play"
-                    className="w-8 h-8 md:w-10 md:h-10"
+                    className="w-6 h-6 md:w-8 md:h-8"
                     loading="eager"
                 />
                 </button>
 
-                <p className="font-bold lg:text-lg text-sm lg:ml-2">Download app</p>
+                <p className="font-bold lg:text-lg text-sm lg:ml-1">Download app</p>
             </div>
             </div>
 
