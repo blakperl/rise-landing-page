@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif !important;
+}
+
+
+.btn {
+  border-radius: 25px;
+  background-color: #0898A0;
+  color: white;
+  padding: 12px 4px;
+  cursor: pointer;
+}
+
+
+.primary {
+  color: #0898A0;
+}
+
+.neutral {
+  color: #5E7387;
+}
+
+nav {
+  color: #1C232B;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.active {
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 9999px;
+  width: 0.5rem;
+  height: 0.5rem;
+}
