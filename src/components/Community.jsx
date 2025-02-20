@@ -3,8 +3,8 @@ import worldImage from '../assets/images/world.webp';
 
 export default function Community() {
   return (
-    <section className="lg:container lg:mx-auto lg:p-4">
-      <div className="flex flex-col lg:flex-row bg-[#0898A0] rounded-2xl pt-12  overflow-hidden">
+    <section className=" lg:p-4 container-width">
+      <div className="flex flex-col lg:flex-row bg-[#0898A0] rounded-2xl pt-12   overflow-hidden">
         <div className="p-4 flex flex-col text-white lg:w-1/2 lg:ml-6">
           <h2 className="font-bold text-2xl lg:text-4xl lg:w-[24ch] leading-tight">
             Join the Rise Community

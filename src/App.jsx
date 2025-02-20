@@ -1,6 +1,7 @@
 import About from "./components/About"
 import Blog from "./components/Blog"
 import Community from "./components/Community"
+import Download from "./components/Download"
 import Experts from "./components/Experts"
 import Footer from "./components/Footer"
 import Goals from "./components/GoalCards"
@@ -15,9 +16,10 @@ function App() {
 
 
   return (
-    <div>
+    <>
    <NavBar />
-   <About />
+  <main>
+  <About />
    <Users />
    <Management />
    <Testimonial />
@@ -26,8 +28,10 @@ function App() {
    <Experts />
    <Blog />
    <Community />
+   <Download />
+  </main>
    <Footer />
-   </div>
+   </>
   )
 }
 

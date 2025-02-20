@@ -10,7 +10,7 @@ export default function Experts() {
   ];
 
   return (
-    <section className="container mx-auto items-center space-y-4 lg:mt-10 mb-8 px-4">
+    <section className=" items-center space-y-4 lg:mt-10 mb-8 px-4 container-width ">
       {/* Mobile Header */}
       <h2 className="font-bold text-2xl text-center lg:hidden my-3">
         Meet the  <span className="italic primary font-normal">Experts.</span>
@@ -22,8 +22,8 @@ export default function Experts() {
         </h2>
         {experts.map(({ name, role, image }) => (
 
-<div className="relative group " key={name}>
-<img src={image} alt={name}  loading="eager" className="rounded-xl lg:h-full lg:object-cover transition-transform transform translate-y-0 group-hover:-translate-y-2.5 duration-500"/>
+<div className="relative group  " key={name}>
+<img src={image} alt={name}  loading="eager" className="rounded-xl lg:h-full mb-4 lg:object-cover transition-transform transform translate-y-0 group-hover:-translate-y-2.5 duration-500"/>
 <p className="text-lg font-bold ">{name}</p>
             <p className="neutral ">{role}</p>
             </div>

@@ -6,10 +6,10 @@ import partnerImage from '../assets/images/partners-image.webp';
 
 export default function About() {
     return (
-      <section className="lg:container lg:mx-auto flex flex-col lg:flex-row  lg:items-start lg:mt-8 ">
-        <div className="mt-6 grid  lg:place-items-start  lg:w-1/2 lg:ml-12 m-4">
-        <button className="border-[#0898A0] bg-[#EDFFFF] border  text-[#0898A0] px-2 lg:flex py-3  rounded-full font-medium text-xs items-center gap-2 hidden group">
-        READ OUR COST OF LIVING REPORT 2024 <ArrowRight  className="transition-transform duration-500 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" />
+      <section className=" flex flex-col lg:flex-row  lg:items-start lg:mt-8 ">
+        <div className="mt-6 grid  lg:place-items-start  lg:w-1/2 lg:ml-20 m-4">
+        <button className="border-[#0898A0] bg-[#EDFFFF] border  text-[#0898A0]  px-2 py-3   text-[0.8rem] items-center gap-2 hidden group lg:flex    uppercase rounded-[2rem]">
+        READ OUR COST OF LIVING REPORT 2024 <ArrowForward className="text-base text-primary ml-1.5 group-hover:translate-x-0.5 transition-all duration-300" />
         </button>
         <h2 className=" font-bold text-4xl lg:text-5xl lg:text-left  lg:w-[14ch] lg:leading-[4rem] mt-2">
                     Dollar investments
@@ -21,7 +21,7 @@ export default function About() {
           </p>
 
             <div className="my-[3rem] flex items-center lg:gap-8 gap-3 ">
-            <button className="btn lg:w-[11rem] w-[10rem] text-center border border-white flex items-center gap-1 justify-center group">
+            <button className="btn lg:w-[11rem] w-[10rem] text-center border border-white flex items-center lg:gap-2 gap-1 justify-center group">
                 Start investing
                 <ArrowRight className="transition-transform duration-500 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" />
               </button>
@@ -57,4 +57,38 @@ export default function About() {
         </div>
       </section>
     );
+}
+
+
+function ArrowForward(...props) {
+  return (
+    <>
+      <svg
+        width="15"
+        height="15"
+        viewBox="0 0 15 15"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        {...props}
+      >
+        <mask
+          id="mask0_4278_6366"
+          style={{ maskType: 'alpha' }}
+          maskUnits="userSpaceOnUse"
+          x="0"
+          y="0"
+          width="15"
+          height="15"
+        >
+          <rect x="0.128906" y="0.875" width="14" height="14" fill="#D9D9D9" />
+        </mask>
+        <g mask="url(#mask0_4278_6366)">
+          <path
+            d="M4.80885 13.7083L3.77344 12.6729L8.57135 7.87496L3.77344 3.07704L4.80885 2.04163L10.6422 7.87496L4.80885 13.7083Z"
+            fill="currentColor"
+          />
+        </g>
+      </svg>
+    </>
+  )
 }

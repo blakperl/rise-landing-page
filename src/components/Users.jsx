@@ -24,14 +24,14 @@ export default function Users() {
   };
 
   return (
-    <section className="container mx-auto items-center space-y-4 mt-10 px-4">
+    <section className=" items-center space-y-4 mt-10 px-4 overflow-x-hidden container-width ">
       <h2 className="font-bold text-2xl text-center lg:text-4xl lg:text-left lg:leading-[4rem] mt-2">
         Meet Some <span className="italic primary font-normal">Rise Users.</span>
       </h2>
 
       {/* Mobile Carousel */}
       <div className="relative w-full max-w-sm mx-auto lg:hidden flex flex-col items-center">
-        <div className="w-full overflow-hidden relative h-[300px]">
+        <div className="w-full overflow-hidden relative h-[240px]">
           <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -82,12 +82,20 @@ export default function Users() {
         </div>
       </div>
 
-      {/* Desktop: Show All Users */}
-      <div className="hidden lg:flex gap-8">
-        {users.map((user, index) => (
-          <img key={index} src={user} alt={`User ${index + 1}`} loading="eager" />
-        ))}
-      </div>
+   {/* Desktop: Show All Users */}
+<div className="hidden lg:flex gap-4 justify-center items-center w-full">
+  {users.map((user, index) => (
+    <img 
+      key={index} 
+      src={user} 
+      alt={`User ${index + 1}`} 
+      loading="eager" 
+      className="rounded-2xl w-1/3 object-contain"
+    />
+  ))}
+</div>
+
+
     </section>
   );
 }

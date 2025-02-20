@@ -23,9 +23,9 @@ const blogs = [
 
 export default function Blog() {
   return (
-    <section className=" lg:container lg:mx-auto  flex flex-col lg:flex-row justify-between lg:items-start lg:mt-24 gap-10 lg:p-0 p-4">
+    <section className="   flex flex-col lg:flex-row justify-between lg:items-start lg:mt-44 mb-8 gap-10 lg:p-0  container-width" >
       <div className="lg:w-1/2 lg:ml-12 m-3">
-        <h2 className="font-bold text-4xl lg:text-5xl lg:text-left lg:w-[17ch] lg:leading-[4rem] mt-2">
+        <h2 className="font-bold text-4xl lg:text-5xl lg:text-left lg:w-[15ch] lg:leading-[4rem] mt-2">
           Get smarter about your money.
         </h2>
         <p className="neutral dm-sans  lg:max-w-[37ch] mt-4 ">
