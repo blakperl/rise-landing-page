@@ -29,7 +29,7 @@ export default function Footer() {
    <NewsLetterForm />
    </div>
      <div className="bg-[#0898A0]">
-     <footer className="lg:pt-[3rem] pt-[5rem]  lg:px-8 px-6  -mt-[7rem] news " >
+     <footer className="lg:pt-[3rem] pt-[5rem]  lg:px-20 px-6  -mt-[7rem] news " >
        <div className=" grid gap-y-10 lg:flex lg:gap-24 lg:mt-28 mt-12">
    
          <div className=" text-left space-y-4">
