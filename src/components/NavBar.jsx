@@ -60,7 +60,7 @@ export default function Navbar() {
 
 function MobileNav() {
   return (
-    <div className="fixed top-[5rem] left-0 h-screen w-full flex flex-col bg-white p-6 space-y-10 z-50">
+    <div className="fixed top-[3rem] left-0 h-screen w-full flex flex-col bg-white p-6 space-y-10 z-50">
       <div className="flex flex-col space-y-6">
         {navLinks.map((item, index) => (
           <li key={index} className="font-bold font-sans text-xl slide-in list-none">

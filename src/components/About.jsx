@@ -25,7 +25,7 @@ export default function About() {
               Start investing 
               <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2" />
             </button>
-                 <button className={`py-4 sm:py-3 px-4 flex items-center bg-[#71879C0D] justify-center space-x-2 rounded-full smMax:whitespace-nowrap focus:ring-0`}>
+                 <button className={`py-4 sm:py-3 px-3 flex items-center bg-[#71879C0D] justify-center space-x-2 rounded-full smMax:whitespace-nowrap focus:ring-0`}>
                                 <span className="flex gap-2 items-center text-xs">
                                 <img src={appleIcon} alt="Apple Store" className="w-6 h-6 md:w-8 md:h-8" loading="eager"/>
                                   <span className={`inline-block w-0 h-3 border-l `} />

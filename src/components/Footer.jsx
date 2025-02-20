@@ -18,15 +18,23 @@ import { companyLinks, contactLinks, exploreLinks, legalLinks } from "../app-con
 import NewsLetterForm from "./NewLetter";
 import { ArrowRight } from "../assets/icons/ArrorRight";
 
+
+const socialIcons = [
+  { src: linkedin, name: "linkedin" },
+  { src: twitter, name: "twitter" },
+  { src: instagram, name: "instagram" },
+  { src: facebook, name: "facebook" },
+  { src: youtube, name: "youtube" },
+];
 export default function Footer() {
   return (
 <div className="relative">
  
   <section className="lg:container lg:mx-auto p-4 lg:mb-28">
-    <div className="flex flex-col lg:flex-row bg-[#71879C0D] rounded-2xl pt-12 my-6 overflow-hidden">
-      <div className="p-4 flex flex-col lg:w-1/2 lg:ml-6 text-center lg:text-left">
-        <p className="text-md primary leading-7 mt-4">Download The Rise App</p>
-        <h2 className="font-bold text-3xl md:text-4xl lg:w-[17ch] lg:leading-[3rem] mt-2">
+    <div className="flex flex-col lg:flex-row bg-[#71879C0D] rounded-2xl lg:pt-12 my-6 overflow-hidden">
+      <div className="p-4 flex flex-col lg:w-1/2 lg:ml-6 text-left">
+        <p className="text-md primary leading-7 lg:mt-4">Download The Rise App</p>
+        <h2 className="font-bold text-4xl lg:w-[17ch] w-[12ch] lg:leading-[3rem] mt-2">
           Rise makes investing simple.
         </h2>
         <div className="my-8 md:my-12 flex flex-col sm:flex-row items-center gap-4 lg:gap-8">
@@ -113,19 +121,17 @@ export default function Footer() {
       </div>
     </div>
 
-    <div className="lg:flex grid gap-y-6 lg:justify-between py-6 lg:pr-20 text-center lg:text-left">
-  <p className="text-sm text-[#9FDCE1]">©2022 Risevest. All rights reserved.</p>
-  <div className="grid grid-cols-3 md:grid-cols-5 lg:flex gap-4 justify-center lg:justify-start">
-    {[linkedin, twitter, instagram, facebook, youtube].map((icon, index) => {
-      const iconName = icon.split("/").pop().split(".")[0]; 
-      return (
-        <div key={index} className="flex gap-2 items-center">
-          <img src={icon} alt={iconName} className="w-4 h-4" loading="eager" />
-          <p className="text-sm text-[#9FDCE1] capitalize">{iconName}</p> 
-        </div>
-      );
-    })}
-  </div>
+    <div className="lg:flex grid gap-y-6 lg:justify-between py-6 px-4 ">
+  <p className="text-sm text-[#9FDCE1] lg:flex hidden">©2022 Risevest. All rights reserved.</p>
+  <div className="grid grid-cols-3 md:grid-cols-5 lg:flex gap-4 justify-end">
+  {socialIcons.map(({ src, name }, index) => (
+    <div key={index} className="flex gap-2 items-center">
+      <img src={src} alt={name} className="w-4 h-4" loading="eager" />
+      <p className="text-sm text-[#9FDCE1] capitalize">{name}</p>
+    </div>
+  ))}
+</div>
+<p className="text-sm text-[#9FDCE1] lg:hidden flex justify-between">All rights reserved. <span>©2022 Risevest.</span></p>
 </div>
 
 

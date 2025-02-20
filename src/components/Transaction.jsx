@@ -10,7 +10,7 @@ function Transaction() {
         <img src={riseWallet} alt="Rise Wallet" width={330} height={300} loading="eager" />
       </div>
     </div>
-    <div className="lg:w-1/2 text-center lg:text-left">
+    <div className="lg:w-1/2 text-left">
       <h2 className="font-bold text-4xl lg:text-left lg:w-[17ch] lg:leading-[3rem] mt-2">
         Make transactions online with <span className="italic primary font-normal">ease</span>
       </h2>
