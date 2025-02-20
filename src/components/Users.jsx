@@ -67,7 +67,7 @@ export default function Users() {
                 currentIndex === 0 ? "opacity-50 cursor-not-allowed" : "bg-[#71879C0D]"
               }`}
             >
-              <ArrowLeft className="transition-transform duration-300 ease-in-out group-hover:translate-x-[-5px] font-bold" />
+              <ArrowLeft className="transition-transform duration-300 ease-in-out group-hover:-translate-x-2 group-active:-translate-x-2 group-focus:-translate-x-2" />
             </button>
             <button
               onClick={nextSlide}
@@ -76,7 +76,7 @@ export default function Users() {
                 currentIndex === users.length - 1 ? "opacity-50 cursor-not-allowed" : "bg-[#71879C0D]"
               }`}
             >
-              <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2 font-bold" />
+            <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" />
             </button>
           </div>
         </div>

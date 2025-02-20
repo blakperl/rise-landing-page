@@ -34,7 +34,7 @@ export default function Blog() {
 
         <div className="my-[3rem] lg:flex items-center lg:gap-8 gap-4 hidden">
           <button className="btn w-[10rem] flex items-center justify-between group">Read the blog 
-            <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2" /></button>
+          <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" /></button>
         </div>
       </div>
 
@@ -51,7 +51,7 @@ export default function Blog() {
       </div>
       <div className="lg:hidden flex items-center lg:gap-8 gap-4">
       <button className="btn w-[10rem] flex items-center justify-between  group">Read the blog
-         <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2" /></button>
+      <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" /></button>
         </div>
     </section>
   );

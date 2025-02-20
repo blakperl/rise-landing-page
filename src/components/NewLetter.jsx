@@ -73,7 +73,7 @@ export default function NewsLetterForm() {
   </label>
 
   <div className="bg-white text-[#0898A0] rounded-full flex items-center justify-center w-10 h-10 md:w-12 md:h-12 cursor-pointer group">
-  <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2" />
+  <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" />
   </div>
 </div>
 

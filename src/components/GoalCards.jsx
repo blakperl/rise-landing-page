@@ -60,7 +60,7 @@ export default function Goals() {
            </h2>
            <p className="text-lg neutral mt-4 leading-7 lg:max-w-[45ch]">{description}</p>
            <button className="mt-6 bg-[#71879C0D] px-3 py-4 lg:w-[19rem] rounded-full flex items-center gap-6 group">
-             {buttonText} <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2" />
+             {buttonText} <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" />
            </button>
          </div>
           {/* Right Side: Image */}

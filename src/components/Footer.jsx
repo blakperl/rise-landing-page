@@ -39,7 +39,7 @@ export default function Footer() {
         </h2>
         <div className="my-8 md:my-12 flex flex-col sm:flex-row items-center gap-4 lg:gap-8">
           <button className="btn w-[10rem] flex items-center justify-between group ">Start investing
-            <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2" /></button>
+          <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" /></button>
         <button className={`py-4 sm:py-3 px-4 flex items-center bg-[#71879C0D] justify-center space-x-2 rounded-full smMax:whitespace-nowrap focus:ring-0`}>
                 <span className="flex gap-2 items-center text-xs">
                 <img src={appleIcon} alt="Apple Store" className="w-6 h-6 md:w-8 md:h-8" loading="eager"/>
@@ -116,7 +116,7 @@ export default function Footer() {
         </button>
         <button className="btn lg:w-[11.5rem] w-full text-center border border-white flex items-center lg:justify-between justify-center gap-4 group">
   Start investing 
-  <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2" />
+  <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" />
 </button>
       </div>
     </div>

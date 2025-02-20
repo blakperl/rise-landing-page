@@ -12,8 +12,10 @@ export default function Community() {
           <p className="text-lg mt-4 leading-7 lg:max-w-[45ch]">
             Our Telegram community surrounds you with others who can help you along your financial journey with tips, advice, and learning. It’s completely free and open to new and seasoned investors.
           </p>
-          <button className="my-6 border border-white text-white px-8 py-4 w-[16rem] rounded-full flex items-center justify-between group">  Join our community
-            <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2" /></button>
+          <button className="my-6 border border-white text-white px-8 py-4 w-[16rem] rounded-full flex items-center justify-between group">
+            Join our community
+            <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" />
+          </button>
         </div>
         <div className="lg:w-1/2 ">
           <img

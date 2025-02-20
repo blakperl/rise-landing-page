@@ -18,7 +18,7 @@ function Transaction() {
         With the Rise US virtual card, you can pay for your subscriptions, shop online, and enjoy a monthly transaction limit of up to $10,000.
       </p>
       <button className="mt-6 px-3 py-4 bg-[#71879C0D] primary rounded-full flex items-center justify-between gap-4 group"> Request your US virtual card 
-        <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2" /></button>
+      <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" /></button>
     </div>
   </div>
     </section>
