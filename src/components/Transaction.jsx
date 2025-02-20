@@ -3,7 +3,7 @@ import riseWallet from '../assets/images/rise-wallet.svg';
 
 function Transaction() {
   return (
-    <section  className=" p-4 container-width  ">
+    <section  className=" p-4 container-width  section">
 <div className="flex flex-col lg:flex-row items-center lg:mt-10">
     <div className="mt-6 lg:w-1/2 p-4">
       <div className="bg-[#41BCC4] inline-block px-20 pt-12 rounded-2xl">

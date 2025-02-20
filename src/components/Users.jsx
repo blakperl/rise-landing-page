@@ -24,7 +24,7 @@ export default function Users() {
   };
 
   return (
-    <section className=" items-center space-y-4 mt-10 px-4 overflow-x-hidden container-width ">
+    <section className=" items-center space-y-4 mt-10 px-4 overflow-x-hidden container-width section ">
       <h2 className="font-bold text-2xl text-center lg:text-4xl lg:text-left lg:leading-[4rem] mt-2">
         Meet Some <span className="italic primary font-normal">Rise Users.</span>
       </h2>

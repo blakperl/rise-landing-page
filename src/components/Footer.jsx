@@ -24,7 +24,7 @@ const socialIcons = [
 ];
 export default function Footer() {
   return (
-    <section className="">
+    <section className="section">
    <div className="news">
    <NewsLetterForm />
    </div>

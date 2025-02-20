@@ -4,7 +4,7 @@ import risePhone from '../assets/images/rise-phone.webp';
 
 export default function Management() {
     return (
-      <section className="  lg:mt-10 ">
+      <section className="  lg:mt-10 section ">
         <div className='flex flex-col lg:flex-row bg-[#71879C0D] rounded-lg  lg:items-start container-width '>
         <div className="mt-6 grid  lg:place-items-start  lg:w-1/2 lg:ml-12 m-4">
         <h2 className=" font-bold text-4xl lg:text-5xl lg:text-left  lg:w-[17ch] lg:leading-[4rem] mt-2">
