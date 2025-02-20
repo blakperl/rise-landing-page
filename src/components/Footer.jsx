@@ -38,7 +38,7 @@ export default function Footer() {
           Rise makes investing simple.
         </h2>
         <div className="my-8 md:my-12 flex flex-col sm:flex-row items-center gap-4 lg:gap-8">
-          <button className="btn w-[10rem] flex items-center justify-between group ">Start investing
+          <button className="btn lg:w-[10rem] w-[13rem] flex items-center justify-between group ">Start investing
           <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" /></button>
         <button className={`py-4 sm:py-3 px-4 flex items-center bg-[#71879C0D] justify-center space-x-2 rounded-full smMax:whitespace-nowrap focus:ring-0`}>
                 <span className="flex gap-2 items-center text-xs">

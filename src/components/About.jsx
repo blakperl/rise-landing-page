@@ -7,11 +7,11 @@ import partnerImage from '../assets/images/partners-image.webp';
 export default function About() {
     return (
       <section className="flex flex-col lg:flex-row  lg:items-start lg:mt-10 ">
-        <div className="mt-6 grid  lg:place-items-start  lg:w-1/2 lg:ml-12 m-3">
+        <div className="mt-6 grid  lg:place-items-start  lg:w-1/2 lg:ml-12 m-4">
         <button className="border-[#0898A0] border  text-[#0898A0] px-2 lg:flex py-3 rounded-full font-medium text-xs items-center gap-2 hidden group">
         READ OUR COST OF LIVING REPORT 2024 <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" />
         </button>
-        <h2 className=" font-bold text-4xl lg:text-5xl lg:text-left  lg:w-[17ch] lg:leading-[4rem] mt-2">
+        <h2 className=" font-bold text-4xl lg:text-5xl lg:text-left  lg:w-[14ch] lg:leading-[4rem] mt-2">
                     Dollar investments
                     that help you {""}
             <span className="italic primary font-normal">grow.</span>
