@@ -1,5 +1,5 @@
-import ceoImage from "../assets/images/ceo.webp";
-import financeLead from "../assets/images/finance-lead.svg";
+import ceoImage from "../assets/images/ceo.jpg";
+import financeLead from "../assets/images/finance-lead.jpg";
 import finance from "../assets/images/finance.svg";
 
 export default function Experts() {
@@ -17,16 +17,16 @@ export default function Experts() {
       </h2>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-        {/* Desktop Header */}
         <h2 className="font-bold text-4xl hidden lg:block px-12 leading-10">
           Meet the <span className="italic text-primary font-normal">Experts</span>
         </h2>
         {experts.map(({ name, role, image }) => (
-          <div key={name} className="space-y-1">
-            <img src={image} alt={name} loading="eager" />
-            <p className="text-lg font-bold">{name}</p>
+
+<div className="relative group " key={name}>
+<img src={image} alt={name} loading="eager" className="rounded-xl transition-transform transform translate-y-0 group-hover:-translate-y-2.5 duration-500"/>
+<p className="text-lg font-bold">{name}</p>
             <p className="neutral">{role}</p>
-          </div>
+            </div>
         ))}
       </div>
     </section>

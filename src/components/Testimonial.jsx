@@ -11,17 +11,17 @@ export default function Testimonial() {
       </h2>
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-center text-center">
   <div className="space-y-3">
-    <h2 className="text-5xl font-bold">300k +</h2>
+    <h2 className="text-4xl font-bold">300k +</h2>
     <p className="text-lg primary">Users</p>
   </div>
 
   <div className="space-y-3">
-    <h2 className="text-5xl font-bold">$42 m +</h2>
+    <h2 className="text-4xl font-bold">$42 m +</h2>
     <p className="text-lg primary">Paid out to users</p>
   </div>
   <div className="space-y-3 col-span-2 lg:col-span-1 flex flex-col items-center">
     <h2 className="flex justify-center items-center gap-2">
-      <span className="text-5xl font-bold">5</span>
+      <span className="text-4xl font-bold">5</span>
       <img src={countryImage} width={140} height={70} alt="country" loading="eager" />
     </h2>
     <p className="text-lg primary">Countries</p>

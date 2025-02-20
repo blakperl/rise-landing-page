@@ -39,7 +39,7 @@ export default function Navbar() {
 
         <div className="lg:flex space-x-2.5 w-[1/4] hidden">
           <button className="cursor-pointer">Log in</button>
-          <button className="btn w-[7rem]">Get Started</button>
+          <button className="btn w-[9rem]">Get Started</button>
         </div>
 
         <div className="flex items-center lg:hidden">
@@ -60,7 +60,7 @@ export default function Navbar() {
 
 function MobileNav() {
   return (
-    <div className="fixed top-[6.25rem] left-0 h-screen w-full flex flex-col bg-white p-6 space-y-10 z-50">
+    <div className="fixed top-[5rem] left-0 h-screen w-full flex flex-col bg-white p-6 space-y-10 z-50">
       <div className="flex flex-col space-y-6">
         {navLinks.map((item, index) => (
           <li key={index} className="font-bold font-sans text-xl slide-in list-none">
@@ -76,7 +76,7 @@ function MobileNav() {
         
         <div className="flex gap-6">
           <button className="btn w-[7rem] ">Log in</button>
-          <button className="btn w-[7rem]">Get Started</button>
+          <button className="btn w-[9rem]">Get Started</button>
         </div>
 
       </div>

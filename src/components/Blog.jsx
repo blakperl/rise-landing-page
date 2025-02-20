@@ -1,3 +1,4 @@
+import { ArrowRight } from '../assets/icons/ArrorRight';
 import blog1 from '../assets/images/blog1.webp';
 import blog2 from '../assets/images/blog2.webp';
 import blog3 from '../assets/images/blog3.webp';
@@ -32,7 +33,8 @@ export default function Blog() {
         </p>
 
         <div className="my-[3rem] lg:flex items-center lg:gap-8 gap-4 hidden">
-          <button className="btn w-[10rem]">Read the blog {"->"}</button>
+          <button className="btn w-[10rem] flex items-center justify-between group">Read the blog 
+            <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2" /></button>
         </div>
       </div>
 
@@ -48,7 +50,8 @@ export default function Blog() {
         ))}
       </div>
       <div className="lg:hidden flex items-center lg:gap-8 gap-4">
-          <button className="btn w-[10rem]">Read the blog {"->"}</button>
+      <button className="btn w-[10rem] flex items-center justify-between  group">Read the blog
+         <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2" /></button>
         </div>
     </section>
   );

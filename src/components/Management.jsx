@@ -1,3 +1,4 @@
+import { ArrowRight } from '../assets/icons/ArrorRight';
 import risePhone from '../assets/images/rise-phone.webp';
 
 
@@ -18,7 +19,10 @@ export default function Management() {
           </p>
 
             <div className="my-[3rem] flex items-center lg:gap-8 gap-4 ">
-            <button className="btn w-[10rem]">Start investing {"->"}</button>
+            <button className="btn w-[10rem]  text-center border border-white flex items-center justify-between group">
+  Start investing 
+  <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2" />
+</button>
             </div>
 
         </div>

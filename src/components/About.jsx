@@ -1,3 +1,4 @@
+import { ArrowRight } from '../assets/icons/ArrorRight';
 import about from '../assets/images/about-image.webp';
 import appleIcon from '../assets/images/apple-icon.webp';
 import googleIcon from '../assets/images/google-icon.webp';
@@ -7,8 +8,8 @@ export default function About() {
     return (
       <section className="flex flex-col lg:flex-row  lg:items-start lg:mt-10 ">
         <div className="mt-6 grid  lg:place-items-start  lg:w-1/2 lg:ml-12 m-4">
-        <button className="border-[#0898A0] border  text-[#0898A0] px-4 py-3 rounded-full font-medium text-xs lg:block hidden">
-        READ OUR COST OF LIVING REPORT 2024 {'>'}
+        <button className="border-[#0898A0] border  text-[#0898A0] px-2 lg:flex py-3 rounded-full font-medium text-xs items-center gap-2 hidden group">
+        READ OUR COST OF LIVING REPORT 2024 <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2" />
         </button>
         <h2 className=" font-bold text-4xl lg:text-5xl lg:text-left  lg:w-[17ch] lg:leading-[4rem] mt-2">
                     Dollar investments
@@ -20,29 +21,18 @@ export default function About() {
           </p>
 
             <div className="my-[3rem] flex items-center lg:gap-8 gap-4 ">
-            <button className="btn w-[10rem]">Start investing {"->"}</button>
-
-            <div className="flex items-center lg:gap-3 gap-2 bg-[#71879C0D] rounded-full py-4 px-3">
-                <button className="lg:border-r-2 neutral lg:pr-3">
-                <img
-                    src={appleIcon}
-                    alt="Apple Store"
-                     className="w-6 h-6 md:w-8 md:h-8"
-                    loading="eager"
-                />
-                </button>
-
-                <button className="lg:pl-3">
-                <img
-                    src={googleIcon}
-                    alt="Google Play"
-                    className="w-6 h-6 md:w-8 md:h-8"
-                    loading="eager"
-                />
-                </button>
-
-                <p className="font-bold lg:text-lg text-sm lg:ml-1">Download app</p>
-            </div>
+            <button className="btn w-[10rem]  text-center border border-white flex items-center justify-between group">
+              Start investing 
+              <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2" />
+            </button>
+                 <button className={`py-4 sm:py-3 px-4 flex items-center bg-[#71879C0D] justify-center space-x-2 rounded-full smMax:whitespace-nowrap focus:ring-0`}>
+                                <span className="flex gap-2 items-center text-xs">
+                                <img src={appleIcon} alt="Apple Store" className="w-6 h-6 md:w-8 md:h-8" loading="eager"/>
+                                  <span className={`inline-block w-0 h-3 border-l `} />
+                                  <img src={googleIcon} alt="Google Play" className="w-6 h-6 md:w-8 md:h-8" loading="eager"/>
+                                </span>
+                                <span className="font-medium">Download app</span>
+                          </button>
             </div>
 
         <div className='border border-[#71879C33] rounded-lg py-4 space-y-2 px-3'>

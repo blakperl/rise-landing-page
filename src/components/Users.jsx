@@ -2,8 +2,9 @@ import { useState } from "react";
 import userOne from "../assets/images/user1.svg";
 import userTwo from "../assets/images/user2.svg";
 import userThree from "../assets/images/user3.svg";
-import arrorwLeft from "../assets/images/arrow-left.webp";
-import arrorwRight from "../assets/images/arrow-right.webp";
+import ArrowLeft from "../assets/icons/ArrowLeft";
+import { ArrowRight } from "../assets/icons/ArrorRight";
+
 
 const users = [userOne, userTwo, userThree];
 
@@ -11,13 +12,15 @@ export default function Users() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % users.length);
+    if (currentIndex < users.length - 1) {
+      setCurrentIndex((prevIndex) => prevIndex + 1);
+    }
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? users.length - 1 : prevIndex - 1
-    );
+    if (currentIndex > 0) {
+      setCurrentIndex((prevIndex) => prevIndex - 1);
+    }
   };
 
   return (
@@ -26,18 +29,26 @@ export default function Users() {
         Meet Some <span className="italic primary font-normal">Rise Users.</span>
       </h2>
 
-     {/* mobile screen */}
+      {/* Mobile Carousel */}
       <div className="relative w-full max-w-sm mx-auto lg:hidden flex flex-col items-center">
-        <div className="w-full flex justify-center">
-          <img
-            src={users[currentIndex]}
-            alt={`User ${currentIndex + 1}`}
-            className="w-full transition-opacity duration-500"
-            loading="eager"
-          />
+        <div className="w-full overflow-hidden relative h-[300px]">
+          <div
+            className="flex transition-transform duration-500 ease-in-out"
+            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          >
+            {users.map((user, index) => (
+              <img
+                key={index}
+                src={user}
+                alt={`User ${index + 1}`}
+                className="w-full flex-shrink-0"
+              />
+            ))}
+          </div>
         </div>
 
-        <div className="w-full flex justify-between items-center mt-4">
+        {/* Dots & Navigation */}
+        <div className="w-full flex justify-between items-center ">
           <div className="flex gap-2">
             {users.map((_, index) => (
               <span
@@ -48,34 +59,33 @@ export default function Users() {
               ></span>
             ))}
           </div>
-          <div className="flex">
-          <button
-            onClick={prevSlide}
-            className="p-2 flex items-center justify-center bg-[#71879C0D] shadow-lg rounded-full"
-          >
-            <img src={arrorwLeft} alt="arrow left" width={30} height={20} loading="eager" />
-          </button>
-          <button
-            onClick={nextSlide}
-            className="p-2 flex items-center justify-center bg-[#71879C0D] shadow-lg rounded-full ml-2"
-          >
-            <img src={arrorwRight} width={30} height={20}  alt="arrow right" loading="eager" />
-          </button>
-        </div>
-
+          <div className="flex gap-5">
+            <button
+              onClick={prevSlide}
+              disabled={currentIndex === 0}
+              className={`p-2 flex items-center justify-center shadow-lg rounded-full group ${
+                currentIndex === 0 ? "opacity-50 cursor-not-allowed" : "bg-[#71879C0D]"
+              }`}
+            >
+              <ArrowLeft className="transition-transform duration-300 ease-in-out group-hover:translate-x-[-5px] font-bold" />
+            </button>
+            <button
+              onClick={nextSlide}
+              disabled={currentIndex === users.length - 1}
+              className={`p-2 flex items-center justify-center shadow-lg rounded-full ml-2 group ${
+                currentIndex === users.length - 1 ? "opacity-50 cursor-not-allowed" : "bg-[#71879C0D]"
+              }`}
+            >
+              <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2 font-bold" />
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* desktop screen */}
-      <div className="hidden lg:flex gap-8 ">
+      {/* Desktop: Show All Users */}
+      <div className="hidden lg:flex gap-8">
         {users.map((user, index) => (
-          <img
-            key={index}
-            src={user}
-            alt={`User ${index + 1}`}
-            
-            loading="eager"
-          />
+          <img key={index} src={user} alt={`User ${index + 1}`} loading="eager" />
         ))}
       </div>
     </section>
