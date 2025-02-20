@@ -7,7 +7,7 @@ import partnerImage from '../assets/images/partners-image.webp';
 export default function About() {
     return (
       <section className="flex flex-col lg:flex-row  lg:items-start lg:mt-10 ">
-        <div className="mt-6 grid  lg:place-items-start  lg:w-1/2 lg:ml-12 m-4">
+        <div className="mt-6 grid  lg:place-items-start  lg:w-1/2 lg:ml-12 m-3">
         <button className="border-[#0898A0] border  text-[#0898A0] px-2 lg:flex py-3 rounded-full font-medium text-xs items-center gap-2 hidden group">
         READ OUR COST OF LIVING REPORT 2024 <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" />
         </button>
@@ -31,7 +31,7 @@ export default function About() {
                                   <span className={`inline-block w-0 h-3 border-l `} />
                                   <img src={googleIcon} alt="Google Play" className="w-5 h-5 md:w-8 md:h-8" loading="eager"/>
                                 </span>
-                                <span className="lg:font-medium">Download app</span>
+                                <span className="lg:font-medium text-xs">Download app</span>
                           </button>
             </div>
 
