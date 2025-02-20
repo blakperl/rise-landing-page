@@ -29,10 +29,12 @@ body {
 .link {
   font-family: 'DM Sans';
   font-size: 14px;
+  
 }
 .linkTwo {
   font-family: 'Tomato Grotesk';
   font-size: 14px;
+  font-weight: 200;
 }
 .btn {
   border-radius: 25px;

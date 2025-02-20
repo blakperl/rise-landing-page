@@ -6,7 +6,7 @@ import partnerImage from '../assets/images/partners-image.webp';
 
 export default function About() {
     return (
-      <section className="lg:container lg:mx-auto flex flex-col lg:flex-row  lg:items-start lg:mt-10 ">
+      <section className="lg:container lg:mx-auto flex flex-col lg:flex-row  lg:items-start lg:mt-8 ">
         <div className="mt-6 grid  lg:place-items-start  lg:w-1/2 lg:ml-12 m-4">
         <button className="border-[#0898A0] bg-[#EDFFFF] border  text-[#0898A0] px-2 lg:flex py-3  rounded-full font-medium text-xs items-center gap-2 hidden group">
         READ OUR COST OF LIVING REPORT 2024 <ArrowRight  className="transition-transform duration-500 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" />

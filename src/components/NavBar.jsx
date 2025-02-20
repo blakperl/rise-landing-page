@@ -20,12 +20,12 @@ export default function Navbar() {
 
         <div className="lg:flex hidden space-x-5 w-[1/4] items-center">
   {navLinks.map((item) => {
-    const isActive = location.pathname + location.hash === item.to;
+    const isActive = location.pathname + location.hash === item.to
      return (
       <li key={item.name} className="list-none relative ">
         <a
           href={item.to}
-          className={`block ${isActive ? 'primary cursor-pointer' : ''}`}
+          className={`block linkTwo ${isActive ? 'primary cursor-pointer' : ''}`}
         >
           {item.name}
         </a>
@@ -38,8 +38,8 @@ export default function Navbar() {
 </div>
 
         <div className="lg:flex  gap-3 space-x-2.5 w-[1/4] hidden">
-          <button className="cursor-pointer bg-[#71879C0D] rounded-full py-3 px-6">Log in</button>
-          <button className="btn w-[9rem]">Get Started</button>
+          <button className="cursor-pointer bg-[#71879C0D] rounded-full py-3 px-6 linkTwo">Log in</button>
+          <button className="btn w-[9rem] linkTwo">Get Started</button>
         </div>
 
         <div className="flex items-center lg:hidden">
