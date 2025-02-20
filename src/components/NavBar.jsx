@@ -10,7 +10,7 @@ export default function Navbar() {
   const location = useLocation();
 
   return (
-    <nav className="sticky top-0 bg-white z-50">
+    <nav className=" top-0 bg-white z-50">
       <div className="flex items-center justify-between py-4 lg-px-0 px-4 container mx-auto">
         {openMenu && <MobileNav close={() => setOpenMenu(false)} />}
 
