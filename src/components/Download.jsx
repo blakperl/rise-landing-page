@@ -7,7 +7,7 @@ import phone from "../assets/images/phone.png";
 
 function Download() {
   return (
-   <section className="p-4 lg:mb-8 container-width section">
+   <section className="p-4  lg:my-24  my-16 container-width section">
        <div className="flex flex-col lg:flex-row bg-[#71879C0D] rounded-2xl lg:pt-12 my-6 overflow-hidden">
          <div className="p-4 flex flex-col lg:w-1/2 lg:ml-6 text-left">
            <p className="primary  text-md dm-sans  mt-4 ">Download The Rise App</p>

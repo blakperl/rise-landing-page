@@ -10,7 +10,7 @@ export default function Experts() {
   ];
 
   return (
-    <section className=" items-center space-y-4 lg:mt-10 mb-8 px-4 container-width section">
+    <section className=" items-center space-y-4  lg:my-44 my-20 px-4 container-width section">
       {/* Mobile Header */}
       <h2 className="font-bold text-2xl text-center lg:hidden my-3">
         Meet the  <span className="italic primary font-normal">Experts.</span>

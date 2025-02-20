@@ -18,7 +18,7 @@ export default function NewsLetterForm() {
 
   return (
     <div className="relative container-width  ">
-      <div className="grid lg:grid-cols-2 gap-6 xl:gap-0 items-center p-4 mdMax:pb-6 md:p-10 bg-[#41BCC4]  rounded-lg max-w-full">
+      <div className="grid lg:grid-cols-2 gap-6 xl:gap-0 items-center p-4 mdMax:pb-6 md:p-10 bg-[#41BCC4]  rounded-xl max-w-full">
         <div className="text-white">
           <h3 className="text-2xl mb-2 xl:mb-0 font-bold text-white">Weekly newsletter</h3>
           <p className="dm-sans  ">Sign up for our weekly newsletter for fun, finance and more</p>

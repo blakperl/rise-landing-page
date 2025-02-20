@@ -23,7 +23,7 @@ const blogs = [
 
 export default function Blog() {
   return (
-    <section className="section   flex flex-col lg:flex-row justify-between lg:items-start lg:mt-44 mb-8 gap-10 lg:p-0  container-width" >
+    <section className="section   flex flex-col lg:flex-row justify-between lg:items-start  lg:my-48  my-20 gap-10 lg:p-0  container-width" >
       <div className="lg:w-1/2 lg:ml-12 ">
         <h2 className="font-bold text-4xl lg:text-5xl lg:text-left lg:w-[15ch] lg:leading-[4rem] mt-2">
           Get smarter about your money.

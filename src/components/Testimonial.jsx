@@ -5,7 +5,7 @@ import countryImage from "../assets/images/country.webp";
 export default function Testimonial() {
 
   return (
-    <section className=" section text-center my-10 py-10 px-4 container-width ">
+    <section className=" section text-center  lg:my-28  my-16 py-10 px-4 container-width ">
       <h2 className="font-bold text-2xl text-center lg:text-4xl  lg:leading-[4rem] my-8">
       See our  <span className="italic primary font-normal">numbers</span>
       </h2>
