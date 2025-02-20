@@ -13,7 +13,7 @@ export const navLinks = [
     },
   ]
 
-  export const companyLinks = [
+  export const Company = [
     {
       name: 'About Us',
     },
@@ -24,7 +24,7 @@ export const navLinks = [
         name: 'FAQ',
       },
 ]
-export const exploreLinks = [
+export const Explore = [
     {
       name: 'Why Rise',
     },
@@ -41,7 +41,7 @@ export const exploreLinks = [
         name: 'Blogs',
       },
 ]
-export const contactLinks = [
+export const Contact  = [
     {
         name: '+234 01 888 3519',
     },
@@ -54,7 +54,7 @@ export const contactLinks = [
    
   ]
 
-  export const legalLinks = [
+  export const Legal = [
     {
         name: 'Privacy Policy',
     },

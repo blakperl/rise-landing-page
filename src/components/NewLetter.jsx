@@ -17,13 +17,13 @@ export default function NewsLetterForm() {
   }
 
   return (
-    <div className="container m-auto">
-      <div className="grid lg:grid-cols-2 gap-6 xl:gap-0 items-center p-4 mdMax:pb-6 md:p-10 bg-[#41BCC4] rounded-xl max-w-full">
+    <div className="relative mx-10 ">
+      <div className="grid lg:grid-cols-2 gap-6 xl:gap-0 items-center p-4 mdMax:pb-6 md:p-10 bg-[#41BCC4]  rounded-lg max-w-full">
         <div className="text-white">
           <h3 className="text-2xl mb-2 xl:mb-0 font-bold text-white">Weekly newsletter</h3>
-          <p className="xl:text-lg font-semibold ">Sign up for our weekly newsletter for fun, finance and more</p>
+          <p className="dm-sans  ">Sign up for our weekly newsletter for fun, finance and more</p>
         </div>
-        <form className="space-y-6 relative">
+        <form className="space-y-6 ">
           <div className="w-full flex flex-col md:flex-row md:space-x-3 space-y-6 md:space-y-0">
             <div className="bg-[#0898A0] text-white  w-full rounded-full md:rounded-r-none p-3.5 md:p-4 relative">
               <label className="flex items-center px-2">
@@ -76,9 +76,7 @@ export default function NewsLetterForm() {
   <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" />
   </div>
 </div>
-
-
-        </form>
+   </form>
       </div>
     </div>
   )

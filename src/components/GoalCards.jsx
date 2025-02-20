@@ -42,25 +42,25 @@ const goalsData = [
 
 export default function Goals() {
   return (
-    <section className="container mx-auto lg:p-4 p-3 grid gap-6">
+    <section className="container mx-auto w-full lg:p-4 p-3 grid gap-6">
       {goalsData.map(({ image, bgColor, title, description, buttonText }) => (
         <div
           key={title}
-          className={`flex flex-col lg:flex-row ${bgColor} rounded-2xl p-6 items-center shadow-md`}
+          className={`flex flex-col lg:flex-row ${bgColor} rounded-2xl p-6 items-center `}
           style={{
             position: 'sticky',
             top: '100px', 
             width: '100%', 
-            maxWidth: '1200px',
+            
           }}
         >
        <div className="lg:p-4 flex flex-col ">
            <h2 className="font-bold text-2xl lg:text-4xl lg:w-[20ch] leading-tight">
              {title}
            </h2>
-           <p className="text-lg neutral mt-4 leading-7 lg:max-w-[45ch]">{description}</p>
-           <button className="mt-6 bg-[#71879C0D] px-3 py-4 lg:w-[19rem] w-full rounded-full flex items-center justify-center gap-4 group">
-             {buttonText} <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" />
+           <p className="neutral dm-sans  lg:max-w-[38ch] mt-4 ">{description}</p>
+           <button className="mt-6 bg-[#71879C0D] px-3 py-4 lg:w-[19rem] w-full cursor-pointer rounded-full flex items-center justify-center gap-4 group">
+             {buttonText} <ArrowRight className="transition-transform duration-500 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" />
            </button>
          </div>
          

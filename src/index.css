@@ -1,10 +1,39 @@
 @import "tailwindcss";
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Tomato Grotesk';
+  max-width: 1400px;
 }
 
+@font-face {
+  font-family: 'Tomato Grotesk';
+  font-weight: 1 1000;
+  src: url('/public/fonts/TomatoGrotesk.ttf') format('opentype');
+  font-display: swap;
+}
 
+@font-face {
+  font-family: 'DM Sans';
+  font-weight: 100 1000;
+  src: url('/public/fonts/DMSans.ttf') format('truetype');
+  font-display: swap;
+}
+
+.dm-sans{
+  font-family: 'DM Sans';
+  font-weight: 400;
+  line-height: 29px;
+  font-size: 19px;
+}
+
+.link {
+  font-family: 'DM Sans';
+  font-size: 14px;
+}
+.linkTwo {
+  font-family: 'Tomato Grotesk';
+  font-size: 14px;
+}
 .btn {
   border-radius: 25px;
   background-color: #0898A0;

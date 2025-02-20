@@ -37,8 +37,8 @@ export default function Navbar() {
   })}
 </div>
 
-        <div className="lg:flex space-x-2.5 w-[1/4] hidden">
-          <button className="cursor-pointer">Log in</button>
+        <div className="lg:flex  gap-3 space-x-2.5 w-[1/4] hidden">
+          <button className="cursor-pointer bg-[#71879C0D] rounded-full py-3 px-6">Log in</button>
           <button className="btn w-[9rem]">Get Started</button>
         </div>
 

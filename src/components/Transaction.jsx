@@ -14,11 +14,11 @@ function Transaction() {
       <h2 className="font-bold text-4xl lg:text-left lg:w-[17ch] lg:leading-[3rem] mt-2">
         Make transactions online with <span className="italic primary font-normal">ease</span>
       </h2>
-      <p className="text-lg neutral mt-4 leading-7 lg:max-w-[45ch]">
+      <p className="neutral dm-sans  lg:max-w-[40ch] mt-4 ">
         With the Rise US virtual card, you can pay for your subscriptions, shop online, and enjoy a monthly transaction limit of up to $10,000.
       </p>
-      <button className="mt-6 px-3 py-4 bg-[#71879C0D] primary rounded-full flex items-center justify-between gap-4 group"> Request your US virtual card 
-      <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" /></button>
+      <button className="mt-6 px-3 py-4 bg-[#71879C0D] cursor-pointer primary rounded-full flex items-center justify-between gap-4 group"> Request your US virtual card 
+      <ArrowRight className="transition-transform duration-500 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" /></button>
     </div>
   </div>
     </section>

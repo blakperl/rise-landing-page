@@ -12,17 +12,17 @@ export default function Management() {
             Managed by  {""}
             <span className="italic primary font-normal">Experts.</span>
           </h2>
-          <p className="text-lg neutral lg:leading-8 leading-7 lg:max-w-[45ch] mt-4">
+          <p className="neutral dm-sans  lg:max-w-[38ch] mt-4 ">
           Explore an array of investment options that offer 
             superior returns, curated and managed by experts, all 
             from the comfort of your device. Simple, right?
           </p>
 
             <div className="my-[3rem] flex items-center lg:gap-8 gap-4 ">
-            <button className="btn w-[10rem]  text-center border border-white flex items-center justify-between group">
-  Start investing 
-  <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" />
-</button>
+            <button className="btn w-[11rem] text-center border border-white flex items-center gap-1 justify-center group">
+                Start investing
+                <ArrowRight className="transition-transform duration-500 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" />
+              </button>
             </div>
 
         </div>

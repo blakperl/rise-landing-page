@@ -16,7 +16,7 @@ export default function Experts() {
         Meet the  <span className="italic primary font-normal">Experts.</span>
       </h2>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 lg:gap-8 gap-6 lg:gap-y-0 gap-y-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 lg:gap-8 gap-4 lg:gap-y-0 gap-y-4">
         <h2 className="font-bold text-4xl hidden lg:block px-12 leading-10">
           Meet the  <span className="italic primary font-normal">Experts</span>
         </h2>
@@ -25,7 +25,7 @@ export default function Experts() {
 <div className="relative group " key={name}>
 <img src={image} alt={name}  loading="eager" className="rounded-xl lg:h-full lg:object-cover transition-transform transform translate-y-0 group-hover:-translate-y-2.5 duration-500"/>
 <p className="text-lg font-bold ">{name}</p>
-            <p className="neutral">{role}</p>
+            <p className="neutral ">{role}</p>
             </div>
         ))}
       </div>
