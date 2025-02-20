@@ -76,12 +76,12 @@ export default function Footer() {
     </div>
   </section>
 
- <section className="relative lg:absolute left-0 w-full lg:top-[calc(100%-60%)] z-20">
+ <section className="absolute left-0 w-full lg:top-[calc(100%-60%)]  top-[calc(100%-70%)] z-20">
   <NewsLetterForm />
 </section>
 
 
-  <footer className="bg-[#0898A0] lg:pt-[3rem] px-4 lg:px-8 overflow-x-hidden">
+  <footer className="bg-[#0898A0] lg:pt-[3rem] pt-[18rem] px-6 lg:px-8 overflow-x-hidden ">
     <div className="lg:container grid gap-y-10 lg:flex lg:gap-24 lg:mt-32 mt-8">
 
       <div className=" text-left space-y-4">
@@ -121,7 +121,7 @@ export default function Footer() {
       </div>
     </div>
 
-    <div className="lg:flex grid gap-y-6 lg:justify-between py-6 px-4 ">
+    <div className="lg:flex grid gap-y-6 lg:justify-between py-6  ">
   <p className="text-sm text-[#9FDCE1] lg:flex hidden">©2022 Risevest. All rights reserved.</p>
   <div className="grid grid-cols-3 md:grid-cols-5 lg:flex gap-4 justify-end">
   {socialIcons.map(({ src, name }, index) => (

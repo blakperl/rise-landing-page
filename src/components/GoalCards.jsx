@@ -42,7 +42,7 @@ const goalsData = [
 
 export default function Goals() {
   return (
-    <section className="container mx-auto p-4 grid gap-6">
+    <section className="container mx-auto lg:p-4 p-3 grid gap-6">
       {goalsData.map(({ image, bgColor, title, description, buttonText }) => (
         <div
           key={title}
@@ -54,16 +54,16 @@ export default function Goals() {
             maxWidth: '1200px',
           }}
         >
-       <div className="lg: p-4 flex flex-col ">
+       <div className="lg:p-4 flex flex-col ">
            <h2 className="font-bold text-2xl lg:text-4xl lg:w-[20ch] leading-tight">
              {title}
            </h2>
            <p className="text-lg neutral mt-4 leading-7 lg:max-w-[45ch]">{description}</p>
-           <button className="mt-6 bg-[#71879C0D] px-3 py-4 lg:w-[19rem] rounded-full flex items-center gap-6 group">
+           <button className="mt-6 bg-[#71879C0D] px-3 py-4 lg:w-[19rem] w-full rounded-full flex items-center justify-center gap-4 group">
              {buttonText} <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-active:translate-x-2 group-focus:translate-x-2" />
            </button>
          </div>
-          {/* Right Side: Image */}
+         
           <div className="flex justify-center lg:justify-end w-full lg:w-1/2">
             <img src={image} alt={title} className="w-80 h-auto object-contain" />
           </div>
