@@ -23,7 +23,7 @@ export default function Experts() {
         {experts.map(({ name, role, image }) => (
 
 <div className="relative group " key={name}>
-<img src={image} alt={name}  loading="eager" className="rounded-xl h-full object-cover transition-transform transform translate-y-0 group-hover:-translate-y-2.5 duration-500"/>
+<img src={image} alt={name}  loading="eager" className="rounded-xl lg:h-full lg:object-cover transition-transform transform translate-y-0 group-hover:-translate-y-2.5 duration-500"/>
 <p className="text-lg font-bold ">{name}</p>
             <p className="neutral">{role}</p>
             </div>
